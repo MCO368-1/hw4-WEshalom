@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsFormsTempConverter.Properties
+namespace FormsConverter.Properties
 {
 
 
