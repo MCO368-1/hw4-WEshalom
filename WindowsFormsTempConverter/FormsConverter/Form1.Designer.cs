@@ -42,8 +42,9 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "enter number";
+            this.textBox1.Text = "0\r\n";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // comboBox1
             // 
@@ -64,10 +65,11 @@
             "Fahrenheit",
             "Celsius",
             "Kelvin"});
-            this.comboBox2.Location = new System.Drawing.Point(121, 93);
+            this.comboBox2.Location = new System.Drawing.Point(121, 97);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(133, 21);
             this.comboBox2.TabIndex = 2;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -87,6 +89,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "CONVERT";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.ButtonPressed);
             // 
             // label2
             // 
