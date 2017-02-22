@@ -43,7 +43,7 @@ namespace FormsConverter
 
         private char ChangeToChar(string option)
         {
-            switch (comboBox1.Text)
+            switch (option)
             {
                 case "Fahrenheit":
                     return 'f';
